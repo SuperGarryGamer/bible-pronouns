@@ -19,4 +19,4 @@ with open("asv.txt", "r") as f:
 
     matches = re.findall(pattern, f_data)
     
-    print(f"The ASV Bible countains at least {len(matches)} pronouns. \nAt least{len(matches) / len(f_data.split()) * 100}% of words in the ASV Bible are pronouns.")
+    print(f"The ASV Bible countains at least {len(matches)} pronouns. \nAt least {str(len(matches) / len(f_data.split()) * 100)[:5]}% of words in the ASV Bible are pronouns.")
